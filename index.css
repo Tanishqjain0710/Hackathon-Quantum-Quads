@@ -1,0 +1,74 @@
+/* Import Cyberpunk Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Background Animation */
+@keyframes cyberBg {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+/* Glowing Effect */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #00ff99; }
+    50% { text-shadow: 0 0 15px #00ff99; }
+    100% { text-shadow: 0 0 5px #00ff99; }
+}
+
+/* Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000428, #004e92, #000428);
+    background-size: 300% 300%;
+    animation: cyberBg 10s infinite alternate;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Root Container */
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Title */
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    animation: glow 2s infinite alternate;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(45deg, #00ff99, #00ccff);
+    color: white;
+}
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Glassmorphism Box */
+.glass-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 350px;
+}

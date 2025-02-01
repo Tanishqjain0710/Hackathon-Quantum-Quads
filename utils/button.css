@@ -1,0 +1,23 @@
+.auth-button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+  }
+  
+  .auth-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+  }
+  
+  .auth-button:active {
+    background-color: #388e3c; /* Even darker green when clicked */
+    transform: scale(0.95); /* Slightly shrinks on click */
+  }
+  
